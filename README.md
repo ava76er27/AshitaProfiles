@@ -29,14 +29,15 @@ avMaB and avMaBMerit I use my Pet Magic Attack Bonus gear with Magic Attack Bonu
 avAtk set is Pet Attack gear with a different staff not to be confused with a Magic Attack Bonus Staff.
 This work for me and am not you and if you have opinion your absolutely right.
 
-I Added Siphon Routine that picks the Right Day for max Siphon. How to setup is in XML file.
-					Ashita looks in the folder Scripts under Ashita Folder for 
+I Added Siphon Routine that picks the Right Day for max Siphon. 
+How to setup this up is in XML file with more details.
+					Ashita looks in the Ashita Folder under Scripts for 
 					the folder siphon for files called
 					
 					dark.txt earth.txt fire.txt ice.txt light.txt thunder.txt 
 					water.txt wind.txt. 
 					
-  Example wind.txt in ashita - scripts - siphon folder:
+  Example wind.txt in ashita folder - scripts folder - siphon folder for wind.txt:
 					
 					/ma "Air Spirit" <me>
 					/wait 6
