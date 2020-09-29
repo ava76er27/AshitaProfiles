@@ -1,7 +1,23 @@
 # AshitaProfiles Thanks to other coder's for let me see their work. Haven't program in years
 After looking at several other coder's I wrote a few as I need to use Ashitacast gearswap.
 If your on Retail Server Please Read Ashitacast Doc's because there is a command to search all
-your Inventory which can get you Banned!!! I don't use it in my code.
+your Inventory which can get you Banned!!! I don't use it! Just use Warerobe only to store your
+Gear. Its search all the Warerobe to swap it in and doesn't matter where its stored in your
+Warerobe unless you didnt pay for Warerobe 3 or 4. 
+
+Start Ashita add Plug-in Ashitacast
+If you look in the Ashita Folder in the Config folder
+you will find a Ashitacast folder. Store the YourName_SMN.xml
+in there and Change YourName in YourName_SMN.xml to your
+Character's Name. Example: Your Character Name is Ralphm.
+
+Ralphm_SMN.xml will load automactic when you change to Summoner
+or Login as Summoner. If delete a < or > when adding your gear
+then it might say Parse Error. Look up Ashitacast commands:
+/ac load
+/ac unload
+/ac debug
+to test you changes to xml file.
 
 SMN PUP SCH Profiles...
 Summoner was my starting XML with thanks to all the Other Coder's help. This was a mix of 2 other people xml.
