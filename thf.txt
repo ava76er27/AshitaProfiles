@@ -5,7 +5,6 @@
 /addon load findall
 /addon load autojoin
 /addon load onevent
-/addon load trustee
 /addon load distance
 /addon load fps
 /addon load tparty
