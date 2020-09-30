@@ -31,8 +31,8 @@ This work for me and am not you and if you have opinion your absolutely right.
 
 I Added Siphon Routine that picks the Right Day for max Siphon. 
 How to setup this up is in XML file with more details.
-					Ashita looks in the Ashita Folder under Scripts for 
-					the folder siphon for files called
+					Ashita looks in the Ashita Folder under Scripts folder
+					for the folder siphon for files called
 					
 					dark.txt earth.txt fire.txt ice.txt light.txt thunder.txt 
 					water.txt wind.txt. 
