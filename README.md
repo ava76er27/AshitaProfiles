@@ -5,7 +5,8 @@ your Inventory which can get you Banned!!! I don't use it! Just use Warerobe onl
 Gear. Its search all the Warerobe to swap it in and doesn't matter where its stored in your
 Warerobe unless you didnt pay for Warerobe 3 or 4. 
 
-Start Ashita add Plug-in Ashitacast
+Start Ashita add Plug-in Ashitacast (May need to restart Ashita so 
+it can create the Folder after installing it)
 If you look in the Ashita Folder in the Config folder
 you will find a Ashitacast folder. Store the YourName_SMN.xml
 in there and Change YourName in YourName_SMN.xml to your
