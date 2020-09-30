@@ -64,7 +64,7 @@ I unload all the Addons and load the addons by Job. Such as PetInfo addon which 
 to installed in the (Ashita Folder - Addons Folder) to work. All addons can be installed
 via Ashita by the addons button. These are what I use from the basic setup of Ashita.
 --------------------------------------------------------------------------------------------------------------
-Chapter 4:----Setup Lock Style and going your Macro Set and Page by Subjob
+Chapter 4:----Setup Lock Style and going your Macro Book and Pages by Subjob
 --------------------------------------------------------------------------
 I've commented this section out because your Macro setup is different then mine.
 But if you like to use it then you need to uncomment and setup the Lock Style, Macrobook, and Macropage.
