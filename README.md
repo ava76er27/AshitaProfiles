@@ -11,7 +11,7 @@ you will find a Ashitacast folder. Store the YourName_SMN.xml
 in there and Change YourName in YourName_SMN.xml to your
 Character's Name. Example: Your Character Name is Ralphm.
 
-Ralphm_SMN.xml will load automactic when you change to Summoner
+Ralphm_SMN.xml will load automatically when you change to Summoner
 or Login as Summoner. If you delete a < or > when adding your gear
 then it might say Parse Error. Look up Ashitacast commands:
 Please Read Ashitacast Doc's
@@ -50,7 +50,7 @@ I've Coded more and am going change this XML more since I learned alot more abou
 Alot of my XML use /exec command and the script folder with txt's files to use. /exec files
 are the same as using In-Game Macro without the limit of six spaces.
 
-smn.txt thf.txt dnc.txt go in Ashita folder - Script folder and are called by the XML.
-I unload all the Addons and load the addaons by Job. Such as PetInfo addon which needs
-to installed in the Ashita Folder in the Addons Folder to work. All addons can be installed
-via Ashita by the addons button. This are what I use from the basic setup of Ashita.
+smn.txt thf.txt dnc.txt go in (Ashita folder - Script folder) and are called by the XML.
+I unload all the Addons and load the addons by Job. Such as PetInfo addon which needs
+to installed in the (Ashita Folder - Addons Folder) to work. All addons can be installed
+via Ashita by the addons button. These are what I use from the basic setup of Ashita.
