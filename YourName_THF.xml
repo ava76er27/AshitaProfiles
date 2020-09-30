@@ -209,7 +209,7 @@ ava76er27/AshitaProfiles
 				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
 				<addtochat color="$Color">$Buffer</addtochat>				
 			<setvar name="init" value="1" />
-			<command>/exec avatarx/thf.txt</command>
+			<command>/exec thf.txt</command>
 			<setvar name="lock" value="99" />
 			<if p_mainjob="THF"><setvar name="macrobook" value="17" /></if>
 			<if p_subjob="DNC"><setvar name="macropage" value="2" /></if>
