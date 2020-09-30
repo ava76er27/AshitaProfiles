@@ -207,18 +207,26 @@
 				<addtochat color="$Color">$Buffer</addtochat>		
 				<addtochat color="$Color">ava76er27/Profiles: Thief 1.01</addtochat>
 				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
-				<addtochat color="$Color">$Buffer</addtochat>				
+				<addtochat color="$Color">$Buffer</addtochat>
 			<setvar name="init" value="1" />
 			<command>/exec thf.txt</command>
-			<setvar name="lock" value="99" />
+			<!---<setvar name="lock" value="99" />
 			<if p_mainjob="THF"><setvar name="macrobook" value="17" /></if>
-			<if p_subjob="DNC"><setvar name="macropage" value="2" /></if>
-			<elseif p_subjob="NIN"><setvar name="macropage" value="3" /></elseif>
-			<else><setvar name="macropage" value="1" /></else>
+			
+			<if     p_subjob="DNC">
+				<setvar name="macropage" value="2" />
+			</if>
+			<elseif p_subjob="NIN">
+				<setvar name="macropage" value="3" />
+			</elseif>
+			<else>
+				<setvar name="macropage" value="1" />
+			</else>
 
 			<command delay="1500">/macro book $macrobook</command>
 			<command delay="3000">/macro set $macropage</command>
 			<command delay='6000'>/lockstyleset $lock</command>
+			--->
 		</if>
 			
 		<if eq_rring="Facility Ring"><equip lock="true"><rring>Facility Ring</rring></equip></if>
