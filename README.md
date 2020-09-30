@@ -1,7 +1,7 @@
 # AshitaProfiles Thanks to other coder's for let me see their work. Haven't program in years
 After looking at several other coder's I wrote a few as I need to use Ashitacast gearswap.
 If your on Retail Server Please Read Ashitacast Doc's because there is a command to search all
-your Inventory which can get you Banned!!! I don't use it! I just use Warerobe only to store your
+your Inventory which can get you Banned!!! I don't use it! I just use Warerobe only to store my
 Gear. Its search all the Warerobe to swap it in and doesn't matter where its stored in your
 Warerobe unless you didnt pay for Warerobe 3 or 4. 
 --------------------------------------------------------------------------------------------------------------
