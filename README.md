@@ -67,7 +67,7 @@ via Ashita by the addons button. These are what I use from the basic setup of As
 Chapter 4:----Setup Lock Style and going your Macro Set and Page by Subjob
 --------------------------------------------------------------------------
 I've commented this section out because your Macro setup is different then mine.
-But if you like to use it then you need to uncommented and setup Lock Style, Macrobook, and Macropage.
+But if you like to use it then you need to uncomment and setup the Lock Style, Macrobook, and Macropage.
 
 p_mainjob	checks the Main job is correct.
 
