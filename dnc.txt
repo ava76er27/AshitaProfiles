@@ -11,5 +11,5 @@
 /addon load repeater
 /addon load aspect
 /addon load DrawDistance
-/drawdistance setworld 20
-/drawdistance setmob 20
+/drawdistance setworld 99
+/drawdistance setmob 99
