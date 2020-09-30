@@ -37,13 +37,13 @@ This work for me and am not you and if you have opinion your absolutely right.
 I Added Siphon Routine that picks the Right Day for max Siphon. 
 How to setup this up is in XML file with more details.
 			Ashita looks in the (Ashita Folder - Scripts folder - siphon folder)
-			(Create a folder called siphon in Scripts folder called siphon) for the files called 
+			(Create a folder called siphon in Scripts folder called siphon) to put the files called 
 						
 					
 					dark.txt earth.txt fire.txt ice.txt light.txt thunder.txt 
 					water.txt wind.txt. 
 					
-  Example wind.txt in (Ashita folder - Scripts folder - siphon folder) for the file wind.txt:
+  Example wind.txt in (Ashita folder - Scripts folder - siphon folder) to put the file wind.txt:
 					
 					/ma "Air Spirit" <me>
 					/wait 6
@@ -52,8 +52,10 @@ How to setup this up is in XML file with more details.
 					/pet "Release" <me>
 
 I've Coded more and am going change this XML more since I learned alot more about Ashitacast.
-Alot of my XML use /exec command and the script folder with txt's files to use. /exec files
-are the same as using In-Game Macro without the limit of six spaces.
+Alot of my XML use /exec command and putting .txt files in script folder. 
+/exec commands are the same as using In-Game Macro without the limit of six spaces.
+The commands can be add as Macro's or on the command line like /siphon used in Summoner XML.
+
 --------------------------------------------------------------------------------------------------------------
 Chapter 3:----Setup start .txt to add what addons wish to use for that Job----
 ------------------------------------------------------------------------------
