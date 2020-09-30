@@ -4,7 +4,9 @@ If your on Retail Server Please Read Ashitacast Doc's because there is a command
 your Inventory which can get you Banned!!! I don't use it! Just use Warerobe only to store your
 Gear. Its search all the Warerobe to swap it in and doesn't matter where its stored in your
 Warerobe unless you didnt pay for Warerobe 3 or 4. 
-
+--------------------------------------------------------------------------------------------------------------
+Chapter 1:----Setup Ashitacast and XML files.----
+-------------------------------------------------
 Start Ashita add Plug-in Ashitacast (May need to restart Ashita so 
 it can create the Folder after installing it)
 If you look in the (Ashita Folder - Config folder - Ashitacast folder).
@@ -19,7 +21,9 @@ Please Read Ashitacast Doc's
 /ac unload
 /ac debug
 to test your changes to xml file.
-
+--------------------------------------------------------------------------------------------------------------
+Chapter 2:----Setup Summoner with Siphon----
+--------------------------------------------
 SMN PUP SCH Profiles...
 Summoner was my starting XML with thanks to all the Other Coder's help. This was a mix of 2 other people xml.
 If you don't have my gear it's ok.
@@ -50,8 +54,12 @@ How to setup this up is in XML file with more details.
 I've Coded more and am going change this XML more since I learned alot more about Ashitacast.
 Alot of my XML use /exec command and the script folder with txt's files to use. /exec files
 are the same as using In-Game Macro without the limit of six spaces.
-
+--------------------------------------------------------------------------------------------------------------
+Chapter 3:----Setup start .txt to add what addons wish to use for that Job----
+------------------------------------------------------------------------------
 smn.txt thf.txt dnc.txt go in (Ashita folder - Script folder) and are called by the XML.
 I unload all the Addons and load the addons by Job. Such as PetInfo addon which needs
 to installed in the (Ashita Folder - Addons Folder) to work. All addons can be installed
 via Ashita by the addons button. These are what I use from the basic setup of Ashita.
+--------------------------------------------------------------------------------------------------------------
+Chapter 4:
