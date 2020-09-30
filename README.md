@@ -48,3 +48,8 @@ How to setup this up is in XML file with more details.
 I've Coded more and am going change this XML more since I learned alot more about Ashitacast.
 Alot of my XML use /exec command and the script folder with txt's files to use. /exec files
 are the same as using In-Game Macro without the limit of six spaces.
+
+smn.txt thf.txt dnc.txt go in Ashita folder - Script folder and are called by the XML.
+I unload all the Addons and load the addaons by Job. Such as PetInfo addon which needs
+to installed in the Ashita Folder in the Addons Folder to work. All addons can be installed
+via Ashita by the addons button. This are what I use from the basic setup of Ashita.
