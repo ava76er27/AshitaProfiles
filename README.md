@@ -12,12 +12,13 @@ in there and Change YourName in YourName_SMN.xml to your
 Character's Name. Example: Your Character Name is Ralphm.
 
 Ralphm_SMN.xml will load automactic when you change to Summoner
-or Login as Summoner. If delete a < or > when adding your gear
+or Login as Summoner. If you delete a < or > when adding your gear
 then it might say Parse Error. Look up Ashitacast commands:
+Please Read Ashitacast Doc's
 /ac load
 /ac unload
 /ac debug
-to test you changes to xml file.
+to test your changes to xml file.
 
 SMN PUP SCH Profiles...
 Summoner was my starting XML with thanks to all the Other Coder's help. This was a mix of 2 other people xml.
