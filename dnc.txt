@@ -1,7 +1,6 @@
 /addon unloadall
 /wait 3
 /exec start
-/addon load THTracker
 /addon load findall
 /addon load autojoin
 /addon load onevent
