@@ -7,10 +7,9 @@ Warerobe unless you didnt pay for Warerobe 3 or 4.
 
 Start Ashita add Plug-in Ashitacast (May need to restart Ashita so 
 it can create the Folder after installing it)
-If you look in the Ashita Folder in the Config folder
-you will find a Ashitacast folder. Store the YourName_SMN.xml
-in there and Change YourName in YourName_SMN.xml to your
-Character's Name. Example: Your Character Name is Ralphm.
+If you look in the (Ashita Folder - Config folder - Ashitacast folder).
+Store the YourName_SMN.xml in there and Change YourName in YourName_SMN.xml
+to your Character's Name. Example: Your Character Name is Ralphm.
 
 Ralphm_SMN.xml will load automatically when you change to Summoner
 or Login as Summoner. If you delete a < or > when adding your gear
@@ -33,8 +32,9 @@ This work for me and am not you and if you have opinion your absolutely right.
 
 I Added Siphon Routine that picks the Right Day for max Siphon. 
 How to setup this up is in XML file with more details.
-					Ashita looks in the Ashita Folder under Scripts folder
-					for the folder siphon for files called
+			Ashita looks in the (Ashita Folder - Scripts folder - siphon folder)
+			for files called (Create a folder called siphon in Scripts folder called siphon)
+						
 					
 					dark.txt earth.txt fire.txt ice.txt light.txt thunder.txt 
 					water.txt wind.txt. 
