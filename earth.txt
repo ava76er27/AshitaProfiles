@@ -1,0 +1,5 @@
+/ma "Earth Spirit" <me>
+/wait 6
+/ja "Elemental Siphon" <me>
+/wait 2
+/pet "Release" <me>
