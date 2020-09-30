@@ -67,43 +67,23 @@ via Ashita by the addons button. These are what I use from the basic setup of As
 Chapter 4:----Setup Lock Style and going your Macro Set and Page by Subjob
 --------------------------------------------------------------------------
 I've commented this section out because your Macro setup is different then mine.
-But if you like to use it needs to be uncommented and setup to your Macro set.
-
-Remove this line:	<!---
-99 is Equipset to use:	<setvar name="lock" value="99" />
-			
-11 is Macro Book:	<if p_mainjob="DNC"><setvar name="macrobook" value="11" /></if>
-			
-Change NIN to yours:	<if     p_subjob="NIN">
-Macro Set to use:	<setvar name="macropage" value="2" />
-			</if>
-Change THF to yours:	<elseif p_subjob="THF">
-Macro Set to use:	<setvar name="macropage" value="3" />
-			</elseif>
-			<else>
-Goto Macro set 1	<setvar name="macropage" value="1" />
-If no matched SubJob	
-			</else>
-
-			<command delay="1500">/macro book $macrobook</command>
-			<command delay="3000">/macro set $macropage</command>
-			<command delay='6000'>/lockstyleset $lock</command>
-Remove this line:	--->
+But if you like to use it then you need to uncommented and setup Lock Style, Macrobook, and Macropage.
 
 p_mainjob	checks the Main job is correct.
 p_subjob	checks to see what sub job you used and goes to the page under
 		main jobs macrobook.
-Macrobook 	is the 11 book I use for my Dancer macro's
+Macrobook 	is the 11 book I use for my Dancer macro's (Lots to use when it comes to Macrobook.
 Macropage	is the page to use. If I sub NIN it goes page 2 and if I sub THF then page 3
 		You can add more pages for subjobs by coping <elseif> - </elseif> and changing
-		the THF to other Subjobs and using Pages 4-10 if needed.
-		NIN THF WAR BLU which are the 3 characters Needed to change in p_subjob="THF"
-		to making more Pages usable in the Macrobook.
-		Copy and Paste this under the </elseif> of THF and change THF to WAR and "3" to "4"
-		will go to Macrobook 11 and Macropage 4 etc...
-		<elseif p_subjob="THF">
-		<setvar name="macropage" value="3" />
-		</elseif>
+		the THF to other Subjobs and using Pages 2-10 if need you change it it from NIN and THF.
+		NIN THF WAR BLU which are the 3 characters needed to be used in statement p_subjob="THF".
+		All the Subjobs have a 3 character code which can be used.
+		Macropage is Page usable in the Macrobook 11 or what Macrobook you use.
+lockstyleset    Is under "Edit Equip SET" pages 1-100 to Lock your Style from Blinking when changing Gear.
+		I have 99 as my causal gear and 100 my lvl 1 crafting. You can lock to any of 1-100 set
+		by changing 99	<setvar name="lock" value="99" /> to any of your sets from 1-100.
+		
+
 If this doesn't work for you replace the comments and use your old way of Lockstyle and change
 to your Macrobooks.
 		
