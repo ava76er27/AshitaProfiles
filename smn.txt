@@ -1,7 +1,7 @@
 /addon unloadall
 /wait 3
 /exec start
-/addon load petinfoplus
+/addon load petinfo
 /addon load findall
 /addon load autojoin
 /addon load onevent
