@@ -201,7 +201,7 @@
 			<equip set="MDT" />
 		</cmd>
 	</inputcommands>
-ava76er27/AshitaProfiles
+
 	<idlegear>
 	    <if advanced="$init=0">
 				<addtochat color="$Color">$Buffer</addtochat>		
@@ -269,7 +269,7 @@ ava76er27/AshitaProfiles
 	</preranged>
 	
 	<jobability>
-		<if ad_name="Perfect Dodge"><equip><hands>Plun. armlets</hands></equip></if>
+		<if ad_name="Perfect Dodge"></if>
 		<if ad_name="Feint"><equip set="TP-Treasure" /></if>		
 		
 		<if ad_name="Sneak Attack">
