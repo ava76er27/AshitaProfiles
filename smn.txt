@@ -1,0 +1,17 @@
+/addon unloadall
+/wait 3
+/exec start
+/addon load petinfoplus
+/addon load findall
+/addon load autojoin
+/addon load onevent
+/addon load trustee
+/addon load distance
+/addon load fps
+/addon load tparty
+/addon load enternity
+/addon load repeater
+/addon load aspect
+/addon load DrawDistance
+/drawdistance setworld 20
+/drawdistance setmob 20
