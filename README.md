@@ -70,15 +70,20 @@ I've commented this section out because your Macro setup is different then mine.
 But if you like to use it then you need to uncommented and setup Lock Style, Macrobook, and Macropage.
 
 p_mainjob	checks the Main job is correct.
+
 p_subjob	checks to see what sub job you used and goes to the page under
 		main jobs macrobook.
+		
+		
 Macrobook 	is the 11 book I use for my Dancer macro's (Lots to use when it comes to Macrobook.
+
 Macropage	is the page to use. If I sub NIN it goes page 2 and if I sub THF then page 3
 		You can add more pages for subjobs by coping <elseif> - </elseif> and changing
 		the THF to other Subjobs and using Pages 2-10 if need you change it it from NIN and THF.
 		NIN THF WAR BLU which are the 3 characters needed to be used in statement p_subjob="THF".
 		All the Subjobs have a 3 character code which can be used.
 		Macropage is Page usable in the Macrobook 11 or what Macrobook you use.
+
 lockstyleset    Is under "Edit Equip SET" pages 1-100 to Lock your Style from Blinking when changing Gear.
 		I have 99 as my causal gear and 100 my lvl 1 crafting. You can lock to any of 1-100 set
 		by changing 99	<setvar name="lock" value="99" /> to any of your sets from 1-100.
