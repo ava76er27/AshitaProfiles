@@ -177,7 +177,7 @@
 				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
 				<addtochat color="$Color">$Buffer</addtochat>	
 			<setvar name="init" value="1" />
-			<command>/exec ratava/dnc.txt</command>
+			<command>/exec dnc.txt</command>
 			<setvar name="lock" value="99" />
 			<if p_mainjob="DNC"><setvar name="macrobook" value="11" /></if>
 			<if p_subjob="NIN"><setvar name="macropage" value="2" /></if>
