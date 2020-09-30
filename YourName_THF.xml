@@ -1,0 +1,321 @@
+
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: FALSE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: FALSE -->
+	</settings>
+	
+	<variables>
+        <var name="init">0</var>
+		<var name="macrobook">1</var>
+		<var name="macropage">1</var>
+		<var name="lock">100</var>
+		<var name="Gear">0</var>
+		<var name="Color">57</var>
+		<var name="Buffer">===============</var>	
+	</variables>
+	
+	<sets>
+		<set name="TP-Treasure">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<head>White Rarab Cap +1</head>			
+<!---			<head>Meghanada Visor +1</head>--->
+			<body>Mummu Jacket +2</body>
+			<hands augment="M3333">Plun. Armlets +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Chaac Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>			
+			<ring2>Mummu Ring</ring2>
+			<back>Canny Cape</back>
+		</set>
+		<set name="TP-Range">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<head>White Rarab Cap +1</head>
+			<!---<head>Meghanada Visor +1</head>--->
+			<body>Mummu Jacket +2</body>
+			<hands augment="M3333">Plun. Armlets +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Ocachi Gorget</neck>
+			<waist>Chaac Belt</waist>
+			<ear1 augment="S560011293">Moonshade Earring</ear1>
+			<ear2>Enervating Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Paqichikaji Ring</ring2>
+			<back>Canny Cape</back>
+		</set>
+		
+		<set name="AGIws">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<!---<head>Wh. Rarab Cap +1</head>--->				
+			<head>Meghanada Visor +1</head>
+			<body augment="D1">Pursuer's Doublet</body>
+			<hands>Mummu Wrists +2</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Svelt. Gouriz +1</waist>
+			<ear1>Phawaylla Earring</ear1>
+			<ear2>Neritic Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Mummu Ring</ring2>
+			<back>Ik Cape</back>		
+		</set>
+		
+		<set name="DEXws">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<!---<head>Wh. Rarab Cap +1</head>--->			
+			<head>Meghanada Visor +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands>Mummu Wrists +2</hands>
+			<legs augment="S704721408">Samnuha Tights</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Svelt. Gouriz +1</waist>
+			<ear1>Phawaylla Earring</ear1>
+			<ear2>Neritic Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Mummu Ring</ring2>
+			<back>Ik Cape</back>		
+		</set>
+		
+		<set name="PDT"><!--- PDT Max evasion and FC --->
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<head augment="S149837317867559">Herculean Helm</head>
+			<body>Mummu Jacket +2</body>
+			<hands augment="M3333">Plun. Armlets +1</hands>
+			<legs augment="S63771952220230">Herculean Trousers</legs>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Oneiros Torque</neck>
+			<waist>Chaac Belt</waist>
+			<ear1>Etiolation Earring</ear1>
+			<ear2>Phawaylla Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Prolix Ring</ring2>
+			<back>Canny Cape</back>		
+		</set>
+		
+		<set name="MDT">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<head augment="S149837317867559">Herculean Helm</head>
+			<body>Mummu Jacket +2</body>
+			<hands augment="M3333">Plun. Armlets +1</hands>
+			<legs>Feast Hose</legs>
+			<feet>Jute Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Chaac Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Etiolation Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Mummu Ring</ring2>
+			<back>Canny Cape</back>
+		</set>		
+		
+		<set name="TP-Accuracy">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<head>Meghanada Visor +1</head>
+			<body>Mummu Jacket +2</body>
+			<hands>Mummu Wrists +2</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Sarissapho. Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>			
+			<ring2>Mummu Ring</ring2>
+			<back>Canny Cape</back>		
+		</set>
+		
+		<set name="TP-Default">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<head>Meghanada Visor +1</head>
+			<body>Mummu Jacket +2</body>
+			<hands>Mummu Wrists +2</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Sarissapho. Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>			
+			<ring2>Mummu Ring</ring2>
+			<back>Canny Cape</back>
+		</set>
+		
+		<set name="Sneak">
+			<main>Skinflayer</main>
+			<sub>Sandung</sub>
+			<range>Exalted C.bow</range>
+			<head>Meghanada Visor +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands>Meg. Gloves +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Cetl Belt</waist>
+			<ear1 augment="S560011293">Moonshade Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Mummu Ring</ring2>
+			<back>Atheling Mantle</back>		
+		</set>
+		
+		<include>
+		</include>
+	</sets>
+	
+	<inputcommands>
+		<cmd input="/th">
+				<setvar name="Gear" value="0" />
+			<equip set="PDT" />
+		</cmd>
+		<cmd input="/pdt">
+				<setvar name="Gear" value="1" />
+			<equip set="PDT" />
+		</cmd>
+		<cmd input="/mdt">
+				<setvar name="Gear" value="2" />
+			<equip set="MDT" />
+		</cmd>
+	</inputcommands>
+ava76er27/AshitaProfiles
+	<idlegear>
+	    <if advanced="$init=0">
+				<addtochat color="$Color">$Buffer</addtochat>		
+				<addtochat color="$Color">ava76er27/Profiles: Thief 1.01</addtochat>
+				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
+				<addtochat color="$Color">$Buffer</addtochat>				
+			<setvar name="init" value="1" />
+			<command>/exec avatarx/thf.txt</command>
+			<setvar name="lock" value="99" />
+			<if p_mainjob="THF"><setvar name="macrobook" value="17" /></if>
+			<if p_subjob="DNC"><setvar name="macropage" value="2" /></if>
+			<elseif p_subjob="NIN"><setvar name="macropage" value="3" /></elseif>
+			<else><setvar name="macropage" value="1" /></else>
+
+			<command delay="1500">/macro book $macrobook</command>
+			<command delay="3000">/macro set $macropage</command>
+			<command delay='6000'>/lockstyleset $lock</command>
+		</if>
+			
+		<if eq_rring="Facility Ring"><equip lock="true"><rring>Facility Ring</rring></equip></if>
+		<if eq_rring="Trizek Ring"><equip lock="true"><rring>Trizek Ring</rring></equip></if>
+		<if eq_rring="Empress Band"><equip lock="true"><rring>Empress Band</rring></equip></if>
+		<if eq_rring="Caliber Ring"><equip lock="true"><rring>Caliber Ring</rring></equip></if>
+		<if eq_rring="Echad Ring"><equip lock="true"><rring>Echad Ring</rring></equip></if>
+		<if eq_rring="Warp Ring"><equip lock="true"><rring>Warp Ring</rring></equip></if>
+		<if eq_rring="Dim. Ring (Holla)"><equip lock="true"><rring>Dim. Ring (Holla)</rring></equip></if>
+		<if eq_rring="Emporox's Ring"><equip lock="true"><rring>Emporox's Ring</rring></equip></if>		
+		<if eq_back="Aptitude Mantle"><equip lock="true"><back>Aptitude Mantle</back></equip></if>
+		<if eq_ear2="Reraise Earring"><equip lock="true"><ear2>Reraise Earring</ear2></equip></if>
+		<if eq_head="Reraise Hairpin"><equip lock="true"><head>Reraise Hairpin</head></equip></if>
+		<if eq_neck="Airmid's Gorget"><equip lock="true"><neck>Airmid's Gorget</neck></equip></if>
+
+		<if p_status="engaged">
+			<if advanced="$Gear=0"><equip set="TP-Treasure" /></if>		
+			<if advanced="$Gear=1"><equip set="PDT" /></if>
+			<if advanced="$Gear=2"><equip set="MDT" /></if>			
+		</if>
+		<elseif>
+			<if advanced="$Gear=0"><equip set="TP-Accuracy" /></if>		
+			<if advanced="$Gear=1"><equip set="PDT" /></if>
+			<if advanced="$Gear=2"><equip set="MDT" /></if>			
+		</elseif>
+			
+		<if buffactive="Madrigal">
+			<equip>
+				<lear>Kuwunga Earring</lear>
+			</equip>
+		</if>
+	</idlegear>
+
+	<premagic>
+		<if ad_name="Utsusemi*">
+				<addtochat color="$Color">$Buffer [Equipping Fast Cast Set!] $Buffer</addtochat>			
+			<equip set="PDT" />
+		</if>
+	</premagic>
+	
+	<midmagic>
+	</midmagic>	
+
+	<preranged>
+			<gearlock delay="10" />	
+			<equip set="TP-Range" />
+				<addtochat color="$Color">$Buffer [Equipping TP-Range Set!] $Buffer</addtochat>
+	</preranged>
+	
+	<jobability>
+		<if ad_name="Perfect Dodge"><equip><hands>Plun. armlets</hands></equip></if>
+		<if ad_name="Feint"><equip set="TP-Treasure" /></if>		
+		
+		<if ad_name="Sneak Attack">
+				<addtochat color="$Color">$Buffer [Equipping Sneak Set!] $Buffer</addtochat>			
+			<equip set="DEXws" />		
+		</if>
+		<if ad_name="Trick Attack">
+				<addtochat color="$Color">$Buffer [Equipping Trick Set!] $Buffer</addtochat>			
+			<equip set="Sneak" />		
+		</if>
+		<if ad_name="Flee">
+			<setvar name="Gear" value="2" />		
+				<addtochat color="$Color">$Buffer [Equipping Flee Set!] $Buffer</addtochat>			
+			<equip set="MDT" />		
+		</if>
+		<if ad_name="Flee|Hide|Steal|Mug">
+			<equip set="PDT" />
+		</if>
+		<if ad_name="*Waltz*|*Samba*|Drain*">
+			<equip set="PDT" />
+		</if>
+		<elseif ad_name="Spectral Jig">
+			<equip set="PDT" />
+		</elseif>		
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Exenterator">
+			<gearlock delay="10" />
+			<equip set="AGIws" />
+				<addtochat color="$Color">$Buffer [Equipping AGIws Set!] $Buffer</addtochat>		
+		</if>
+		<if ad_name="Evisceration">
+			<gearlock delay="10" />
+			<equip set="DEXws" />
+				<addtochat color="$Color">$Buffer [Equipping DEXws Set!] $Buffer</addtochat>		
+		</if>
+		<if ad_name="Heavy Shot">
+			<gearlock delay="10" />
+			<equip set="TP-Range" />
+				<addtochat color="$Color">$Buffer [Equipping TP-Range Set!] $Buffer</addtochat>		
+		</if>
+		<if ad_name="Last Stand">
+			<gearlock delay="10" />
+			<equip set="TP-Range" />
+				<addtochat color="$Color">$Buffer [Equipping TP-Range Set!] $Buffer</addtochat>		
+		</if>		
+	</weaponskill>
+</ashitacast>
