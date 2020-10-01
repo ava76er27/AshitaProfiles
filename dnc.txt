@@ -1,10 +1,10 @@
 /addon unloadall
 /wait 3
-/exec start
 /addon load findall
 /addon load autojoin
 /addon load onevent
 /addon load distance
+/addon load recast
 /addon load fps
 /addon load tparty
 /addon load enternity
