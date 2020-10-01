@@ -1,0 +1,384 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<variables>
+        <var name="toggle">0</var>
+		<var name="Gear">0</var>
+		<var name="Mem">0</var>
+        <var name="init">0</var>
+		<var name="macrobook">1</var>
+		<var name="macropage">1</var>
+		<var name="lockstyleset">100</var>
+		<var name="Color">57</var>
+		<var name="Buffer">===============</var>		
+    </variables>	
+	
+	<sets>
+		<set name="Stand"> <!--Gear when doing nothing-->
+			<main>Ames</main>
+			<sub>Sors Shield</sub>
+			<ammo>Vanir Battery</ammo>
+			<head>Acad. Mortar. +2</head>
+			<body>Acad. Gown +2</body>
+			<hands>Shrieker's cuffs</hands>
+			<legs>Amalric Slops</legs>
+			<feet>Amalric Nails</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Belisama's Rope +1</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Woltaris Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="Resting">
+			<main>Iridal Staff</main>
+			<sub>Elder's Grip</sub>	
+			<ammo>Vanir Battery</ammo>
+			<head>Acad. Mortar. +2</head>
+			<body>Acad. Gown +2</body>
+			<hands>Shrieker's cuffs</hands>
+			<legs>Amalric Slops</legs>
+			<feet>Amalric Nails</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Belisama's Rope +1</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Fenrir Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="Nuke">
+			<main augment="D20976951840516">Akademos</main>
+			<sub>Elder's Grip</sub>			
+			<ammo>Vanir Battery</ammo>
+<!---		<head>Amalric Coif</head>
+			<body>Amalric Doublet</body>
+			<hands>Amalric Gages</hands>
+			<legs>Amalric Slops</legs>
+			<feet>Amalric Nails</feet>--->
+			<head>Merlinic Hood</head>
+			<body>Merlinic jubbah</body>
+			<hands>Amalric Gages</hands>
+			<legs augment="S79316518809625">Merlinic Shalwar</legs>
+			<feet augment="S17742543775877">Merlinic Crackows</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Emphatikos Rope</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back>Bookworm's Cape</back>
+		</set>
+		<set name="EleDot">
+			<head>Acad. Mortar. +2</head>
+			<body>Acad. Gown +2</body>		
+		</set>
+		<set name="Enfeeb-ACC">
+			<head>Acad. Mortar. +2</head>
+			<body>Acad. Gown +2</body>		
+		</set>
+		<set name="Enfeeb-MND">
+		</set>
+		<set name="Dark">
+			<main augment="D20976951840516">Akademos</main>
+			<sub>Caecus Grip</sub>			
+			<ammo>Vanir Battery</ammo>
+			<head>Amalric Coif</head>
+			<body>Amalric Doublet</body>
+			<hands>Amalric Gages</hands>
+			<legs>Amalric Slops</legs>
+			<feet>Amalric Nails</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Emphatikos Rope</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back>Bookworm's Cape</back>
+		</set>
+		<set name="Stun">
+			<main augment="D20976951840516">Akademos</main>
+			<sub>Elder's Grip</sub>				
+			<ammo>Vanir Battery</ammo>
+			<head>Amalric Coif</head>
+			<body>Amalric Doublet</body>
+			<hands>Amalric Gages</hands>
+			<legs>Amalric Slops</legs>
+			<feet>Amalric Nails</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Emphatikos Rope</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back>Bookworm's Cape</back>
+		</set>
+		<set name="DrainAspir">
+			<neck>Erra Pendant</neck>
+			<waist>Fucho-no-Obi</waist>			
+			<ring2>Excelsis Ring</ring2>
+		</set>			
+		<set name="Enhancing">
+			<main>Ames</main>
+			<sub>Sors Shield</sub>
+			<ammo>Vanir Battery</ammo>
+			<head>Befouled Crown</head>
+			<body>Acad. Gown +2</body>
+			<hands>Shrieker's cuffs</hands>
+			<legs>Amalric Slops</legs>
+			<feet>Amalric Nails</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Embla Sash</waist><!---<waist>Othila Sash</waist>--->			
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Prolix Ring</ring2>
+			<back>Swith Cape</back>
+		</set>
+		<set name="Stoneskin">
+			<ear2>Earthcry Earring</ear2>
+			<waist>Embla Sash</waist><!---<waist>Othila Sash</waist>--->					
+		</set>
+		<set name="Storm">
+		<!---<feet>Argute Loafers +2</feet>--->
+			<waist>Embla Sash</waist><!---<waist>Othila Sash</waist>--->				
+			<feet>Revealer's Pumps</feet>		
+		</set>
+		<set name="Regen">
+		<!---<head>Arbatel bonnet +1</head>--->
+			<head>Befouled Crown</head>
+			<waist>Embla Sash</waist><!---<waist>Othila Sash</waist>--->			
+		</set>
+		<set name="Healing">
+			<main>Ames</main>
+			<sub>Sors Shield</sub>
+			<ammo>Incantor Stone</ammo>
+			<head>Vanya Hood</head>
+			<body>Chironic Doublet</body>
+			<hands>Chironic Gloves</hands>
+			<legs>Chironic Hose</legs>
+			<feet>Amalric Nails</feet><!--- Vanya feet--->
+			<neck>Nesanica Torque</neck>
+			<waist>Belisama's Rope +1</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Prolix Ring</ring2>
+			<back>Swith Cape</back>
+		</set>
+		<set name="Precast">
+			<main>Ames</main>
+			<sub>Sors Shield</sub>
+			<ammo>Incantor Stone</ammo>
+			<head>Acad. Mortar. +2</head>
+			<body>Acad. Gown +2</body>
+			<hands>Shrieker's cuffs</hands>
+			<legs>Amalric Slops</legs>
+			<feet>Merlinic Crackows</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Emphatikos Rope</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Aredan Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Prolix Ring</ring2>
+			<back>Swith Cape</back>
+		</set>
+		<set name="Sublimation">
+			<rear>Savant's Earring</rear>
+			<head>Academic's Mortarboard +2</head>
+		</set>
+	</sets>
+
+	<inputcommands>
+		<cmd input="/stand">
+			<setvar name="Gear" value="0" />
+			<setvar name="Mem" value="$Gear" />
+			<equip set="Stand" />
+		</cmd>
+		<cmd input="/sc">
+				<setvar name="Gear" value="1" />
+				<setvar name="Mem" value="$Gear" />
+			<equip set="Nuke" />
+		</cmd>
+		<cmd input="/dark">
+				<setvar name="Gear" value="2" />
+				<setvar name="Mem" value="$Gear" />				
+			<equip set="Dark" />
+		</cmd>
+		<cmd input="/rest">
+				<setvar name="Gear" value="3" />
+				<setvar name="Mem" value="$Gear" />				
+			<equip set="Resting" />
+		</cmd>		
+	</inputcommands>
+	
+	<idlegear>
+	    <if advanced="$init=0">
+				<addtochat color="$Color">$Buffer</addtochat>		
+				<addtochat color="$Color">ava76er27/Profiles: Scholar 1.01</addtochat>
+				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
+				<addtochat color="$Color">$Buffer</addtochat>		
+			<setvar name="init" value="1" />
+			<command>/exec sch.txt</command>
+			<setvar name="lockstyleset" value="99" />
+			<if p_mainjob="SCH"><setvar name="macrobook" value="07" /></if>
+			<setvar name="macropage" value="1" />
+
+			<command delay="1500">/macro book $macrobook</command>
+			<command delay="3000">/macro set $macropage</command>
+			<command delay='6000'>/lockstyleset $lockstyleset</command>
+		</if>	
+						<!---<addtochat color="57">Toggle $toggle Gear $Gear Mem $Mem</addtochat>	--->
+		<if advanced="$toggle=0"><equip set="Stand" />
+						<!---<addtochat color="57">Toggle $toggle Gear $Gear</addtochat>		--->	
+		</if>
+		<if p_status="resting">
+			<setvar name="Gear" value="3" /><equip set="Resting" />
+		</if>
+		<else><setvar name="Gear" value="$Mem" /></else>
+		<if p_status="engaged">
+				<setvar name="toggle" value="1" />		
+			<if advanced="$Gear=0"><equip set="Stand" /></if>		
+			<if advanced="$Gear=1"><equip set="Nuke" /></if>
+			<if advanced="$Gear=2"><equip set="Dark" /></if>
+			<if advanced="$Gear=3"><equip set="Resting" /></if>				
+		</if>
+		<elseif>
+				<setvar name="toggle" value="0" />		
+			<if advanced="$Gear=0"><equip set="Stand" /></if>		
+			<if advanced="$Gear=1"><equip set="Nuke" /></if>
+			<if advanced="$Gear=2"><equip set="Dark" /></if>
+			<if advanced="$Gear=3"><equip set="Resting" /></if>				
+		</elseif>
+	</idelgear>
+	
+	<jobability>
+		<if ad_name="Light Arts">
+			<if BuffActive="358">
+				<registerbuff id="358" />
+				<clearbuff id="401" />
+				<change id="234" />
+			</if>
+			<else>
+				<registerbuff id="401" />
+				<clearbuff id="358" />
+			</else>
+			<registerbuff id="359" active="false" />
+			<registerbuff id="402" active="false" />
+		</if>
+		<if ad_name="Dark Arts">
+			<if BuffActive="359">
+				<registerbuff id="359" />
+				<clearbuff id="402" />
+				<change id="235" />
+			</if>
+			<else>
+				<registerbuff id="402" />
+				<clearbuff id="359" />
+			</else>
+			<registerbuff id="358" active="false" />
+			<registerbuff id="401" active="false" />
+		</if>
+
+
+		<if ad_name="Penury"><registerbuff id="360" /></if>
+		<if ad_name="Parsimony"><registerbuff id="361" /></if>
+		<if ad_name="Celerity"><registerbuff id="362" /></if>
+		<if ad_name="Alacrity"><registerbuff id="363" /></if>
+		<if ad_name="Rapture"><registerbuff id="364" /></if>
+		<if ad_name="Ebullience"><registerbuff id="365" /></if>
+		<if ad_name="Perpetuance"><registerbuff id="469" /></if>
+		<if ad_name="Tabula Rasa"><equip><legs>Argute Pants +2</legs></equip></if>
+	</jobability>
+
+	<premagic>
+
+		<if ad_type="WhiteMagic">
+						<addtochat color="57">Healing Magic</addtochat>
+			<if ad_name="Cure*|Curaga*">
+				<equip set="Healing" />
+			</if>
+			<elseif ad_name="Refresh">
+				<equip set="Refresh" />
+			</elseif>			
+			<elseif ad_name="Stoneskin|Blink|Aquaveil">
+				<equip set="Stoneskin" />
+			</elseif>
+			<elseif ad_name="Cursna">
+				<equip set="Cursna" />
+			</elseif>
+			<elseif ad_name="*storm*|Regen*|Adloquium|Animus*|">
+				<equip set="PreCast" />
+			</elseif>
+		</if>
+		<else ad_skill="*magic">
+						<addtochat color="57">PreCast Magic $Gear</addtochat>		
+		<equip set="Precast" />
+		</else>
+		
+	</premagic>
+
+
+	<midmagic>
+	
+						<addtochat color="57">MidMagic $Gear</addtochat>	
+		<if ad_skill="DarkMagic">
+				<if advanced="$Gear=1"><equip set="Nuke" /><addtochat color="57">Nuke Magic $Gear</addtochat></if>		
+				<if advanced="$Gear=2"><equip set="Dark" /><addtochat color="57">Dark Magic $Gear</addtochat></if>
+
+				<if ad_name="Stun|Bind"><equip set="Dark" />
+						<addtochat color="57">Stun ----Bind------------</addtochat>			
+				</if>
+				<if ad_name="Drain|Aspir"><equip set="Dark" />
+						<addtochat color="57">Drain ----Aspir------------</addtochat>					
+				</if>				
+		</if>
+<!---				<else>
+						<addtochat color="57">SC Magic</addtochat>		
+				<equip set="Nuke" />
+				<gearlock delay="10" />				
+				</else>--->
+		
+		<elseif ad_skill="ElementalMagic">
+				<if ad_name="Burn|Choke|Shock|Rasp|Drown|Choke">
+						<addtochat color="57">Dot Magic</addtochat>				
+				<equip set="Dark" />
+				</if>
+				<else>
+				<if advanced="$Gear=1"><equip set="Nuke" /><addtochat color="57">Nuke Magic $Gear</addtochat></if>		
+				<if advanced="$Gear=2"><equip set="Dark" /><addtochat color="57">Dark Magic $Gear</addtochat></if>	
+				</else>
+		</elseif>
+
+		<elseif ad_skill="EnfeeblingMagic">
+				<if ad_name="Slow|Paralyze">
+						<addtochat color="57">Slow|Paralyze Magic</addtochat>			
+				<equip set="Enfeeb-MND" />
+				</if>
+		</elseif>
+				<else>
+						<addtochat color="57">Acc Gear Magic</addtochat>				
+				<equip set="Enfeeb-ACC" />
+				</else>
+			
+		<if ad_skill="EnhancingMagic">
+			<if ad_name="Embrava|En*|Bar*|Phalanx">
+									<addtochat color="57">Enhancing</addtochat>			
+			<equip set="Enhancing" />
+			<gearlock delay="10" />			
+			</if>
+		
+			<if ad_name="Regen*">
+									<addtochat color="57">Regen</addtochat>
+			<equip set="Regen" />
+			</if>
+			<if buffactive="469"><equip><hands>Arbatel bracers +1</hands></equip></if>
+		</if>
+		<if buffactive="360|361" ad_name="!Embrava"><equip><legs>Arbatel Pants +1</legs></equip></if>
+	</midmagic>
+</ashitacast>

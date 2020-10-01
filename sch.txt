@@ -1,0 +1,15 @@
+/addon unloadall
+/wait 3
+/addon load findall
+/addon load autojoin
+/addon load onevent
+/addon load distance
+/addon load recast
+/addon load fps
+/addon load tparty
+/addon load enternity
+/addon load repeater
+/addon load aspect
+/addon load DrawDistance
+/drawdistance setworld 99
+/drawdistance setmob 99
