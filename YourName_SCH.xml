@@ -37,7 +37,7 @@
 		</set>
 		<set name="Resting">
 			<main>Iridal Staff</main>
-			<sub>Elder's Grip</sub>	
+			<sub>Elder's Grip</sub><!--- To perform the Resting must be added or its trys to load shield during rest--->	
 			<ammo>Vanir Battery</ammo>
 			<head>Acad. Mortar. +2</head>
 			<body>Acad. Gown +2</body>
@@ -52,6 +52,16 @@
 			<ring2>Fenrir Ring</ring2>
 			<back>Solemnity Cape</back>
 		</set>
+		<set name="WhiteArtsPlus">
+		</set>
+		<set name="DarkArtsPlus">
+			<body>Acad. Gown +2</body>		
+		</set>
+		<set name="Sublimation">
+			<head>Academic's Mortarboard +2</head>
+			<rear>Savant's Earring</rear>
+			<waist>Embla Sash</waist>			
+		</set>		
 		<set name="Nuke">
 			<main augment="D20976951840516">Akademos</main>
 			<sub>Elder's Grip</sub>			
@@ -140,19 +150,30 @@
 			<ring2>Prolix Ring</ring2>
 			<back>Swith Cape</back>
 		</set>
+		<set name="Refresh">
+			<head>Befouled Crown</head>
+			<waist>Embla Sash</waist>			
+			<back>Grapevine Cape</back>			
+		</set>	
 		<set name="Stoneskin">
+			<head>Befouled Crown</head>
+			<waist>Embla Sash</waist>			
 			<ear2>Earthcry Earring</ear2>
-			<waist>Embla Sash</waist><!---<waist>Othila Sash</waist>--->					
 		</set>
 		<set name="Storm">
-		<!---<feet>Argute Loafers +2</feet>--->
-			<waist>Embla Sash</waist><!---<waist>Othila Sash</waist>--->				
-			<feet>Revealer's Pumps</feet>		
-		</set>
-		<set name="Regen">
-		<!---<head>Arbatel bonnet +1</head>--->
 			<head>Befouled Crown</head>
-			<waist>Embla Sash</waist><!---<waist>Othila Sash</waist>--->			
+			<waist>Embla Sash</waist>			
+			<feet>Argute loafers +3</feet><!--- Dyna D set Argute Loafers on Porter--->
+		</set>
+		<set name="Adloqu">
+			<head>Befouled Crown</head>
+			<waist>Embla Sash</waist>			
+			<hands>Arbatel bracers +1</hands>
+		</set>		
+		<set name="Regen">
+			<head>Befouled Crown</head><!---<head>Arbatel bonnet +1</head>--->
+			<waist>Embla Sash</waist>
+			<back>Lugh's Cape</back>			
 		</set>
 		<set name="Healing">
 			<main>Ames</main>
@@ -169,7 +190,7 @@
 			<ear2>Aredan Earring</ear2>
 			<ring1>Fenrir Ring</ring1>
 			<ring2>Prolix Ring</ring2>
-			<back>Swith Cape</back>
+			<back>Solemnity Cape</back>
 		</set>
 		<set name="Precast">
 			<main>Ames</main>
@@ -187,10 +208,6 @@
 			<ring1>Fenrir Ring</ring1>
 			<ring2>Prolix Ring</ring2>
 			<back>Swith Cape</back>
-		</set>
-		<set name="Sublimation">
-			<rear>Savant's Earring</rear>
-			<head>Academic's Mortarboard +2</head>
 		</set>
 	</sets>
 
@@ -220,7 +237,7 @@
 	<idlegear>
 	    <if advanced="$init=0">
 				<addtochat color="$Color">$Buffer</addtochat>		
-				<addtochat color="$Color">ava76er27/Profiles: Scholar 1.01</addtochat>
+				<addtochat color="$Color">ava76er27/Profiles: Scholar 1.10</addtochat>
 				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
 				<addtochat color="$Color">$Buffer</addtochat>		
 			<setvar name="init" value="1" />
@@ -259,45 +276,27 @@
 	
 	<jobability>
 		<if ad_name="Light Arts">
-			<if BuffActive="358">
-				<registerbuff id="358" />
-				<clearbuff id="401" />
-				<change id="234" />
-			</if>
-			<else>
-				<registerbuff id="401" />
-				<clearbuff id="358" />
-			</else>
-			<registerbuff id="359" active="false" />
-			<registerbuff id="402" active="false" />
+				<equip set="WhiteArtsPlus" />
 		</if>
 		<if ad_name="Dark Arts">
-			<if BuffActive="359">
-				<registerbuff id="359" />
-				<clearbuff id="402" />
-				<change id="235" />
-			</if>
-			<else>
-				<registerbuff id="402" />
-				<clearbuff id="359" />
-			</else>
-			<registerbuff id="358" active="false" />
-			<registerbuff id="401" active="false" />
+				<equip set="DarkArtsPlus" />
 		</if>
-
-
-		<if ad_name="Penury"><registerbuff id="360" /></if>
-		<if ad_name="Parsimony"><registerbuff id="361" /></if>
-		<if ad_name="Celerity"><registerbuff id="362" /></if>
-		<if ad_name="Alacrity"><registerbuff id="363" /></if>
-		<if ad_name="Rapture"><registerbuff id="364" /></if>
-		<if ad_name="Ebullience"><registerbuff id="365" /></if>
-		<if ad_name="Perpetuance"><registerbuff id="469" /></if>
-		<if ad_name="Tabula Rasa"><equip><legs>Argute Pants +2</legs></equip></if>
+		<if ad_name="Sublimation">
+				<equip set="Sublimation" />		
+		</if>		
 	</jobability>
 
 	<premagic>
+		<if ad_skill="*magic">
+						<addtochat color="57">PreCast Magic $Gear</addtochat>		
+		<equip set="Precast" />
+		</if>
+	</premagic>
 
+
+	<midmagic>
+	
+						<addtochat color="57">MidMagic $Gear</addtochat>
 		<if ad_type="WhiteMagic">
 						<addtochat color="57">Healing Magic</addtochat>
 			<if ad_name="Cure*|Curaga*">
@@ -315,18 +314,7 @@
 			<elseif ad_name="*storm*|Regen*|Adloquium|Animus*|">
 				<equip set="PreCast" />
 			</elseif>
-		</if>
-		<else ad_skill="*magic">
-						<addtochat color="57">PreCast Magic $Gear</addtochat>		
-		<equip set="Precast" />
-		</else>
-		
-	</premagic>
-
-
-	<midmagic>
-	
-						<addtochat color="57">MidMagic $Gear</addtochat>	
+		</if>						
 		<if ad_skill="DarkMagic">
 				<if advanced="$Gear=1"><equip set="Nuke" /><addtochat color="57">Nuke Magic $Gear</addtochat></if>		
 				<if advanced="$Gear=2"><equip set="Dark" /><addtochat color="57">Dark Magic $Gear</addtochat></if>
@@ -334,15 +322,10 @@
 				<if ad_name="Stun|Bind"><equip set="Dark" />
 						<addtochat color="57">Stun ----Bind------------</addtochat>			
 				</if>
-				<if ad_name="Drain|Aspir"><equip set="Dark" />
+				<if ad_name="Drain|Aspir"><equip set="DrainAspir" />
 						<addtochat color="57">Drain ----Aspir------------</addtochat>					
 				</if>				
 		</if>
-<!---				<else>
-						<addtochat color="57">SC Magic</addtochat>		
-				<equip set="Nuke" />
-				<gearlock delay="10" />				
-				</else>--->
 		
 		<elseif ad_skill="ElementalMagic">
 				<if ad_name="Burn|Choke|Shock|Rasp|Drown|Choke">
@@ -355,29 +338,36 @@
 				</else>
 		</elseif>
 
-		<elseif ad_skill="EnfeeblingMagic">
+<!---		<if ad_skill="EnfeeblingMagic">
 				<if ad_name="Slow|Paralyze">
 						<addtochat color="57">Slow|Paralyze Magic</addtochat>			
 				<equip set="Enfeeb-MND" />
 				</if>
-		</elseif>
-				<else>
+		</if>
+		<elseif>
 						<addtochat color="57">Acc Gear Magic</addtochat>				
-				<equip set="Enfeeb-ACC" />
-				</else>
+			<equip set="Enfeeb-ACC" />
+		</elseif>
+--->		
+	
 			
 		<if ad_skill="EnhancingMagic">
 			<if ad_name="Embrava|En*|Bar*|Phalanx">
 									<addtochat color="57">Enhancing</addtochat>			
 			<equip set="Enhancing" />
-			<gearlock delay="10" />			
 			</if>
-		
+			<if ad_name="*storm*">
+									<addtochat color="57">Storm</addtochat>
+				<equip set="Storm" />
+			</if>			
+			
+			<if ad_name="Adloquium"><equip set="Adloqu" />
+									<addtochat color="57">Adloquium</addtochat>			
+			</if>
 			<if ad_name="Regen*">
 									<addtochat color="57">Regen</addtochat>
 			<equip set="Regen" />
 			</if>
-			<if buffactive="469"><equip><hands>Arbatel bracers +1</hands></equip></if>
 		</if>
 		<if buffactive="360|361" ad_name="!Embrava"><equip><legs>Arbatel Pants +1</legs></equip></if>
 	</midmagic>
