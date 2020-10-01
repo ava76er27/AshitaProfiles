@@ -249,6 +249,18 @@
 			<command delay="1500">/macro book $macrobook</command>
 			<command delay="3000">/macro set $macropage</command>
 			<command delay='6000'>/lockstyleset $lockstyleset</command>
+		<if eq_rring="Facility Ring"><equip lock="true"><rring>Facility Ring</rring></equip></if>
+		<if eq_rring="Trizek Ring"><equip lock="true"><rring>Trizek Ring</rring></equip></if>
+		<if eq_rring="Empress Band"><equip lock="true"><rring>Empress Band</rring></equip></if>
+		<if eq_rring="Caliber Ring"><equip lock="true"><rring>Caliber Ring</rring></equip></if>
+		<if eq_rring="Echad Ring"><equip lock="true"><rring>Echad Ring</rring></equip></if>
+		<if eq_rring="Warp Ring"><equip lock="true"><rring>Warp Ring</rring></equip></if>
+		<if eq_rring="Dim. Ring (Holla)"><equip lock="true"><rring>Dim. Ring (Holla)</rring></equip></if>
+		<if eq_rring="Emporox's Ring"><equip lock="true"><rring>Emporox's Ring</rring></equip></if>		
+		<if eq_back="Aptitude Mantle"><equip lock="true"><back>Aptitude Mantle</back></equip></if>
+		<if eq_ear2="Reraise Earring"><equip lock="true"><ear2>Reraise Earring</ear2></equip></if>
+		<if eq_head="Reraise Hairpin"><equip lock="true"><head>Reraise Hairpin</head></equip></if>
+		<if eq_neck="Airmid's Gorget"><equip lock="true"><neck>Airmid's Gorget</neck></equip></if>		    
 		</if>	
 						<!---<addtochat color="57">Toggle $toggle Gear $Gear Mem $Mem</addtochat>	--->
 		<if advanced="$toggle=0"><equip set="Stand" />
