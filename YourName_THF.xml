@@ -252,12 +252,6 @@
 			<if advanced="$Gear=1"><equip set="PDT" /></if>
 			<if advanced="$Gear=2"><equip set="MDT" /></if>			
 		</elseif>
-			
-		<if buffactive="Madrigal">
-			<equip>
-				<lear>Kuwunga Earring</lear>
-			</equip>
-		</if>
 	</idlegear>
 
 	<premagic>
