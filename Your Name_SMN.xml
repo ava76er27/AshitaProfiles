@@ -194,12 +194,8 @@
     <inputcommands>
         <cmd input="/Siphon">
             	<equip set="Siphon" />
-					<command>/exec avatarx/siphon/%e_dayelement</command>
+					<command>/exec siphon/%e_dayelement</command>
 		</cmd>		
-        <cmd input="/Release">
-            	<equip set="Perp" />
-				<command>/exec avatarx/commands/release</command>
-		</cmd>
     </inputcommands>
    
     <idlegear>
