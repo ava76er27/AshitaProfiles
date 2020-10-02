@@ -100,7 +100,7 @@
             <body>Convo. Doublet +2</body><!--<body>Convo. Doublet +3</body>-->
             <hands>Convo. Bracers +2</hands><!--Merlinic Dastanas full mab aug-->
             <lring>Varar Ring</lring>
-			<ring2>Speaker's Ring</ring2>
+	    <ring2>Speaker's Ring</ring2>
             <back augment="S3572553800716518543">Campestres's Cape</back>
             <waist>Incarnation Sash</waist>
             <legs>Enticer's Pants</legs>
@@ -113,7 +113,7 @@
 			<head>Beckoner's Horn +1</head>
 			<body augment="M1412">Glyphic Doublet +3</body>
 			<hands augment="M1413">Glyphic Bracers +3</hands>
-            <legs augment="M1414">Glyphic Spats +3</legs>
+                        <legs augment="M1414">Glyphic Spats +3</legs>
 			<feet>Convo. Pigaches +2</feet>
 			<neck>Caller's Pendant</neck>
 			<waist>Embla Sash</waist>
@@ -205,7 +205,7 @@
     <idlegear>
 	    <if advanced="$init=0">
 				<addtochat color="$Color">$Buffer</addtochat>		
-				<addtochat color="$Color">ava76er27/Profiles: Scholar 1.10</addtochat>
+				<addtochat color="$Color">ava76er27/Profiles: Summoner 1.11</addtochat>
 				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
 				<addtochat color="$Color">$Buffer</addtochat>		
 			<setvar name="init" value="1" />		
