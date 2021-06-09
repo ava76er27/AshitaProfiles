@@ -53,7 +53,7 @@
 			<ring2>Merirosvo Ring</ring2>
 			<back>Camulus's Mantle</back>
 		</set>
-		<set name="TP-Accuracy">
+		<set name="TP-Accuracy"> <!--- Used when I was skilling up Gun on low levels mobs --->
 			<range>Anarchy</range>
 			<head>Meghanada Visor +1</head>
 			<body>Laksa. Frac +2</body>
