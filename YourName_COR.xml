@@ -38,7 +38,7 @@
 			<range>Compensator</range>
 		</set>
 		
-		<set name="Stand">
+		<set name="Stand"> <!--- Just standing around or Idle --->
 			<range>Doomsday</range>
 			<head>Meghanada Visor +1</head>
 			<body>Mummu Jacket +2</body>
@@ -57,7 +57,6 @@
 			<range>Anarchy</range>
 			<head>Meghanada Visor +1</head>
 			<body>Laksa. Frac +2</body>
-			<!---<body>Meg. Cuirie +1</body>--->
 			<hands>Meg. Gloves +1</hands>
 			<legs>Meg. Chausses +1</legs>
 			<feet>Meg. Jam. +1</feet>
@@ -71,8 +70,7 @@
 		</set>
 		<set name="TP">
 			<head>Meghanada Visor +1</head>
-					<body>Laksa. Frac +2</body>
-			<!---<body>Meg. Cuirie +1</body>--->
+			<body>Laksa. Frac +2</body>
 			<hands>Meg. Gloves +1</hands>
 			<legs>Meg. Chausses +1</legs>
 			<feet>Meg. Jam. +1</feet>
@@ -84,20 +82,7 @@
 			<ring2>Nekhen Ring</ring2>
 			<back>Atheling Mantle</back>
 		</set>
-		<set name="Racc">
-			<!---<head augment="S149837317867559">Herculean Helm</head>
-			<body augment="S1619333160">Herculean Vest</body>
-			<hands augment="S813811839304382181">Herculean Gloves</hands>
-			<legs augment="S63771952220230">Herculean Trousers</legs>
-			<feet augment="S105854871339335">Herculean Boots</feet>
-			<neck>Ocachi Gorget</neck>
-			<waist>Eschan Stone</waist>
-			<ear1 augment="S560011293">Moonshade Earring</ear1>
-			<ear2>Bladeborn Earring</ear2>
-			<ring1>Paqichikaji Ring</ring1>
-			<ring2>Nekhen Ring</ring2>
-			<back>Navarch's Mantle</back>--->
-			<!---    Needs Highes ACC setup 			--->
+		<set name="Racc"> <!--- Ranged shot --->
 			<head>Meghanada Visor +1</head>
 			<body>Mummu Jacket +2</body>
 			<hands>Mummu Wrists +2</hands>
@@ -111,12 +96,12 @@
 			<ring2>Nekhen Ring</ring2>
 			<back>Navarch's Mantle</back>
 		</set>	
-		<set name="Rmid">
-				<head>Lanun tricorne +1</head>
+		<set name="Rmid"> <!--- Mid Shot from target --->
+			<head>Lanun tricorne +1</head>
 			<body>Lakas. Frac +2</body>
 			<hands>Meg. Gloves +1</hands>
 			<legs>Meg. Chausses +1</legs>
-				<feet>Lanun bottes +2</feet>
+			<feet>Lanun bottes +2</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<ear1 augment="S560011293">Moonshade Earring</ear1>			
@@ -126,10 +111,10 @@
 			<back>Gunslinger's Cape</back>		
 		</set>
 		
-		<set name="QD">
+		<set name="QD"> <!--- Quick Shot --->
 			<ammo>Hauksbok Bullet</ammo>
 			<head>Laksa. Tricorne +1</head>			
-				<body>Lanun Frac +1</body>
+			<body>Lanun Frac +1</body>
 			<hands augment="S813811839304382181">Herculean Gloves</hands>
 			<legs augment="S63771952220230">Herculean Trousers</legs>
 			<feet>Laksa. Bottes +2</feet>
@@ -144,7 +129,7 @@
 		<set name="QD-LD" BaseSet="QD">
 			<ammo>Hauksbok Bullet</ammo>
 			<head>Laksa. Tricorne +1</head>			
-				<body>Lanun Frac +1</body>
+			<body>Lanun Frac +1</body>
 			<hands augment="S813811839304382181">Herculean Gloves</hands>
 			<legs augment="S63771952220230">Herculean Trousers</legs>
 			<feet>Laksa. Bottes +2</feet>
@@ -158,12 +143,12 @@
 			<!---<lear>Lifestorm Earring</lear>
 			<rear>Psystorm Earring</rear>--->
 		</set>
-		<set name="LastStand">
-				<head>Lanun tricorne +1</head>
+		<set name="LastStand"> <!--- Last Stand Gear used --->
+			<head>Lanun tricorne +1</head>
 			<body>Lakas. Frac +2</body>
 			<hands>Meg. Gloves +1</hands>
 			<legs>Meg. Chausses +1</legs>
-				<feet>Lanun bottes +2</feet>
+			<feet>Lanun bottes +2</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<ear1 augment="S560011293">Moonshade Earring</ear1>			
@@ -172,12 +157,12 @@
 			<ring2>Garuda Ring</ring2>
 			<back>Gunslinger's Cape</back>
 		</set>
-		<set name="Wildfire">
+		<set name="Wildfire"> <!--- Gear Used for Wildfire --->
 			<head augment="S149837317867559">Herculean Helm</head>
-				<body>Lanun Frac +1</body>
+			<body>Lanun Frac +1</body>
 			<hands augment="S813811839304382181">Herculean Gloves</hands>
 			<legs augment="S63771952220230">Herculean Trousers</legs>
-				<feet>Lanun bottes +2</feet>
+			<feet>Lanun bottes +2</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<ear1 augment="S560011293">Moonshade Earring</ear1>
@@ -186,12 +171,12 @@
 			<ring2>Garuda Ring</ring2>
 			<back>Gunslinger's Cape</back>
 		</set>
-		<set name="Salute">
+		<set name="Salute"> <!--- Leaden Salute Gear used --->
 			<head augment="S149837317867559">Herculean Helm</head>
-				<body>Lanun Frac +1</body>
+			<body>Lanun Frac +1</body>
 			<hands>Carmine Fin. Ga.</hands>
 			<legs augment="S63771952220230">Herculean Trousers</legs>
-				<feet>Lanun bottes +2</feet>
+			<feet>Lanun bottes +2</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<ear1 augment="S560011293">Moonshade Earring</ear1>
@@ -201,7 +186,7 @@
 			<back>Gunslinger's Cape</back>
 		</set>
 		
-		<set name="Steps">
+		<set name="Steps"> <!--- Used if subbed Dancer --->
 			<head>Herculean Helm</head>
 			<neck>Subtlety Spec.</neck>
 			<lear>Steelflash Earring</lear>
@@ -215,7 +200,8 @@
 			<legs>Samnuha Tights</legs>
 			<feet>Herculean boots</feet>				
 		</set>
-		<set name="Savage">
+		
+		<set name="Savage"> <!--- Sword gear used for Salute --->
 			<head>Meghanada Visor +1</head>
 			<body>Laksa. Frac +2</body>
 			<hands>Meg. Gloves +1</hands>
@@ -229,7 +215,7 @@
 			<ring2>Mummu Ring</ring2>
 			<back>Atheling Mantle</back>
 		</set>
-		<set name="Requiescat">
+		<set name="Requiescat">  <!--- Sword gear used for Requiescat --->
 			<head>Meghanada Visor +1</head>
 			<body>Meg. Cuirie +1</body>
 			<hands>Meg. Gloves +1</hands>
@@ -244,7 +230,7 @@
 			<back>Atheling Mantle</back>
 		</set>
 
-		<set name="Exenterator">
+		<set name="Exenterator">   <!--- Dagger gear used for Exenterator --->
 			<head>Meghanada Visor +1</head>
 			<body>Laksa. Frac +2</body>
 			<hands>Pursuer's Cuffs</hands>
@@ -259,7 +245,7 @@
 			<back>Atheling Mantle</back>
 		</set>
 
-		<set name="Magey">
+		<set name="Magey"> <!--- Have set up yet --->
 			<head>Meghanada Visor +1</head>
 			<body>Mummu Jacket +2</body>
 			<hands>Mummu Wrists +2</hands>
@@ -274,7 +260,7 @@
 			<back>Camulus's Mantle</back>
 		</set>
 		
-		<set name="Precast">
+		<set name="Precast"> <!--- Used for when NIN Subbed --->
 			<head>Meghanada Visor +1</head>
 			<body>Mummu Jacket +2</body>
 			<hands>Mummu Wrists +2</hands>
@@ -288,13 +274,13 @@
 			<ring2>Nekhen Ring</ring2>
 			<back>Gunslinger's Cape</back>
 		</set>
-		<set name="PDT">
+		<set name="PDT"> <!--- Physical Damage Modifier --->
 			<neck>Twilight Torque</neck>
 			<lring>Dark Ring</lring>
 			<back>Mollusca Mantle</back>
 			<waist>Flume Belt</waist>
 		</set>
-		<set name="MDT"><!--needs 23-->
+		<set name="MDT"><!--needs 23--> <!--- Magic Damage Modifier --->
 			<neck>Twilight Torque</neck>
 			<lring>Dark Ring</lring>
 			<rring>Shadow Ring</rring>
