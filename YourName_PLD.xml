@@ -1,0 +1,385 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	
+	<variables>
+        <var name="toggle">0</var>
+		<var name="Gear">0</var>
+		<var name="Gset">0</var>
+		<var name="Mem">0</var>
+		<var name="Wea">0</var>
+		<var name="Rng">0</var>
+		<var name="CP">0</var>
+        <var name="init">0</var>
+		<var name="macrobook">1</var>
+		<var name="macropage">1</var>
+		<var name="lockstyleset">100</var>
+		<var name="Color">159</var>
+		<var name="Buffer">===============</var>	
+	</variables>
+	
+	<sets>
+		<set name="Skillup">
+			<main></main>
+			<sub></sub>
+			<range></range>
+		</set>
+		<set name="PDS">
+			<main>Naegling</main>
+			<sub>Priwen</sub>
+			<ammo>Incantor Stone</ammo>
+			<waist>Flume Belt</waist>
+			<ear1>Etiolation Earring</ear1>
+			<ear2>Cryptic Earring</ear2>			
+			<setvar name="Wea" value="Nixxer" />
+			<setvar name="Rng" value="Bow" />				
+		</set>
+		<set name="Swords">
+			<main>Naegling</main>
+			<sub>Priwen</sub>
+			<ammo>Incantor Stone</ammo>
+			<waist>Flume Belt</waist>
+			<ear1>Etiolation Earring</ear1>
+			<ear2>Cryptic Earring</ear2>			
+			<setvar name="Wea" value="Buramenk'ah" />
+			<setvar name="Rng" value="Bow" />				
+		</set>
+		<set name="Great">
+			<main>Montante</main>
+			<sub>Tzacab Grip</sub>
+			<range></range>
+			<ammo>Incantor Stone</ammo>			
+			<waist>Cetl Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>				
+			<setvar name="Wea" value="Great Sword" />
+			<setvar name="Rng" value="Bow" />				
+		</set>
+		
+		<set name="Idle">
+			<ammo>Sabiki Rig</ammo>
+			<head>Tlahtlamah Glasses</head>
+			<body>Alliance Shirt +1</body>
+			<hands>Carpenter's Cuffs</hands>
+			<legs>Limbo Trousers</legs>
+			<feet>Waders</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Fisherman's Belt</waist>
+			<ear1>Etiolation Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Setae Ring</ring1>
+			<ring2>Sattva Ring</ring2>
+			<back>Rudianos's Mantle</back>
+		</set>
+		<set name="TP-Accuracy">
+			<head>Flam. Zucchetto +1</head>
+			<body>Flamma Korazin +1</body>
+			<hands>Flam. Manopolas +1</hands>
+			<legs>Flamma Dirs +1</legs>
+			<feet>Flam. Gambieras +1</feet>
+			<neck>Veisa Collar</neck>
+			<waist>Cetl Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Vengeful Ring</ring2>
+			<back>Atheling Mantle</back>	
+		</set>
+
+		<set name="Engaged">
+			<head>Flam. Zucchetto +1</head>
+			<body>Flamma Korazin +1</body>
+			<hands>Flam. Manopolas +1</hands>
+			<legs>Flamma Dirs +1</legs>
+			<feet>Flam. Gambieras +1</feet>
+			<neck>Veisa Collar</neck>
+			<waist>Cetl Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Vengeful Ring</ring2>
+			<back>Rudianos's Mantle</back>
+		</set>
+		<set name="Hate">
+			<head augment="D10441174044418">Souveran Schaller</head>
+			<body augment="D10441174044418">Souveran Cuirass</body>
+			<hands augment="D10441174044418">Souv. Handschuhs</hands>
+			<legs augment="D10441174044418">Souveran Diechlings</legs>
+			<feet augment="S7094118430771418469">Founder's Greaves</feet>
+			<neck>Veisa Collar</neck>
+			<waist>Cetl Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Vengeful Ring</ring2>
+			<back>Rudianos's Mantle</back>
+		</set>
+		<set name="PDT">
+			<head>Sulevia's Mask +1</head>
+			<body>Sulevia's Plate. +1</body>
+			<hands>Sulev. Gauntlets +1</hands>
+			<legs>Sulevi. Cuisses +1</legs>
+			<feet>Sulev. Leggings +1</feet>
+			<neck>Veisa Collar</neck>
+			<waist>Cetl Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Gelatinous Ring</ring1>
+			<ring2>Setae Ring</ring2>
+			<back>Rudianos's Mantle</back>
+		</set>
+		<set name="MDT">
+			<head>Sulevia's Mask +1</head>
+			<body>Flamma Korazin +1</body>
+			<hands>Flam. Manopolas +1</hands>
+			<legs>Flamma Dirs +1</legs>
+			<feet>Flam. Gambieras +1</feet>
+			<neck>Veisa Collar</neck>
+			<waist>Cetl Belt</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Bladeborn Earring</ear2>
+			<ring1>Beeline Ring</ring1>
+			<ring2>Vengeful Ring</ring2>
+			<back>Rudianos's Mantle</back>
+		</set>
+		<set name="Fastcast">
+			<head augment="D10441174044418">Souveran Schaller</head>
+			<body augment="S17760362534913">Jumalik Mail</body>
+			<hands augment="D10441174044418">Souv. Handschuhs</hands>
+			<legs augment="D10441174044418">Souveran Diechlings</legs>
+			<feet>Flam. Gambieras +1</feet>
+			<neck>Nesanica Torque</neck>
+			<waist>Rumination Sash</waist>
+			<ear1>Etiolation Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Eihwaz Ring</ring1>
+			<ring2>Prolix Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="Healing">
+			<head>Souveran schaller</head>
+			<body augment="S17760362534913">Jumalik Mail</body>
+			<hands augment="D10441174044418">Souv. Handschuhs</hands>
+			<legs augment="D10441174044418">Souveran Diechlings</legs>
+			<feet>Sulev. Leggings +1</feet>
+			<neck>Nesanica Torque</neck>
+			<waist>Rumination Sash</waist>
+			<ear1>Etiolation Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Eihwaz Ring</ring1>
+			<ring2>Prolix Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="MAttack">
+			<head augment="D10441174044418">Souveran Schaller</head>
+			<body augment="S17760362534913">Jumalik Mail</body>
+			<hands augment="S1343824384">Founder's Gauntlets</hands>
+			<legs>Sulevi. Cuisses +1</legs>
+			<feet>Sulev. Leggings +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Rumination Sash</waist>
+			<ear1>Etiolation Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Fenrir Ring</ring2>
+			<back>Rudianos's Mantle</back>			
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+		<cmd input="/skillup">
+			<equip set="Skillup" />
+		</cmd>
+		<cmd input="/pds">
+			<equip set="PDS" />
+		</cmd>
+		<cmd input="/sword">
+			<equip set="Swords" />
+		</cmd>
+		<cmd input="/great">
+			<equip set="Great" />
+		</cmd>
+		<cmd input="/cp">
+		<if advanced="$CP=0">
+			<equip>
+			<back>Aptitude Mantle</back>				
+			</equip><gearlock delay="4" />
+			<command>/ac disable back</command>
+			<setvar name="CP" value="1" /><addtochat color="4">CP disable $CP</addtochat>
+		</if>
+		<else>
+			<command>/ac enable back</command>
+			<setvar name="CP" value="0" /><addtochat color="4">CP enable $CP</addtochat>
+		</else>
+		</cmd>
+		<cmd input="/idle">
+				<setvar name="Gear" value="0" />
+				<setvar name="Mem" value="$Gear" />
+				<setvar name="Gset" value="TP-Accuracy" /><addtochat color="4">Gear $Gset</addtochat>				
+			<equip set="TP-Accuracy" />
+		</cmd>	
+		<cmd input="/pdt">
+				<setvar name="Gear" value="1" />
+				<setvar name="Mem" value="$Gear" />
+				<setvar name="Gset" value="PDT" /><addtochat color="4">Gear $Gset</addtochat>			
+			<equip set="PDT" />
+		</cmd>
+		<cmd input="/mdt">
+				<setvar name="Gear" value="2" />
+				<setvar name="Mem" value="$Gear" />
+				<setvar name="Gset" value="MDT" /><addtochat color="4">Gear $Gset</addtochat>			
+			<equip set="MDT" />
+		</cmd>
+		<cmd input="/hate">
+				<setvar name="Gear" value="3" />
+				<setvar name="Mem" value="$Gear" />
+				<setvar name="Gset" value="Hate" /><addtochat color="4">Gear $Gset</addtochat>			
+			<equip set="Hate" />
+		</cmd>
+	</inputcommands>
+	<idlegear>
+<!---
+	    <if advanced="$init=0">
+				<addtochat color="$Color">$Buffer</addtochat>
+				<addtochat color="$Color">ava76er27/Profiles: Palidan ver. 0.17</addtochat>
+				<addtochat color="$Color">Website:https://github.com/ava76er27</addtochat>
+				<addtochat color="$Color">$Buffer</addtochat>		
+			<setvar name="init" value="1" />		
+			<command>/exec avatarx/pld.txt</command>
+			<setvar name="lockstyleset" value="06" />
+			<if p_mainjob="PLD"><setvar name="macrobook" value="12" /></if>
+			<setvar name="macropage" value="01" />
+
+			<command delay="1500">/macro book $macrobook</command>
+			<command delay="3000">/macro set $macropage</command>
+			<command delay='6000'>/lockstyleset $lockstyleset</command>
+		</if>
+--->	
+		<if p_status="engaged">
+				<setvar name="toggle" value="1" />
+				<setvar name="Gear" value="$Mem" />				
+			<if advanced="$Gear=0"><equip set="Engaged" /><setvar name="Gset" value="Engaged" /></if>		
+			<if advanced="$Gear=1"><equip set="PDT" /><setvar name="Gset" value="PDT" /></if>
+			<if advanced="$Gear=2"><equip set="MDT" /><setvar name="Gset" value="MDT" /></if>
+			<if advanced="$Gear=2"><equip set="Hate" /><setvar name="Gset" value="Hate" /></if>
+		</if>
+		<elseif>
+				<setvar name="toggle" value="0" />
+				<setvar name="mem" value="$Gear" />				
+				<equip set="$Gset" />				
+		</elseif>
+
+		<if eq_rring="Facility Ring"><equip lock="true"><rring>Facility Ring</rring></equip></if>
+		<if eq_rring="Trizek Ring"><equip lock="true"><rring>Trizek Ring</rring></equip></if>
+		<if eq_rring="Empress Band"><equip lock="true"><rring>Empress Band</rring></equip></if>
+		<if eq_rring="Caliber Ring"><equip lock="true"><rring>Caliber Ring</rring></equip></if>
+		<if eq_rring="Echad Ring"><equip lock="true"><rring>Echad Ring</rring></equip></if>
+		<if eq_rring="Warp Ring"><equip lock="true"><rring>Warp Ring</rring></equip></if>
+		<if eq_rring="Dim. Ring (Holla)"><equip lock="true"><rring>Dim. Ring (Holla)</rring></equip></if>
+		<if eq_rring="Emporox's Ring"><equip lock="true"><rring>Emporox's Ring</rring></equip></if>		
+		<if eq_back="Aptitude Mantle"><equip lock="true"><back>Aptitude Mantle</back></equip></if>
+		<if eq_ear2="Reraise Earring"><equip lock="true"><ear2>Reraise Earring</ear2></equip></if>
+		<if eq_head="Reraise Hairpin"><equip lock="true"><head>Reraise Hairpin</head></equip></if>
+		<if eq_neck="Airmid's Gorget"><equip lock="true"><neck>Airmid's Gorget</neck></equip></if>
+		<if eq_ammo="wooden arrows"><equip lock="true"><ammo>wooden arrows</ammo></equip></if>
+		<if eq_ammo="crossbow bolts"><equip lock="true"><ammo>crossbow bolts</ammo></equip></if>		
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<if ad_skill="*magic">
+						<!---<addtochat color="4">***FC0***$Gset***$Wset</addtochat>--->
+		<equip set="Fastcast" />
+		</if>
+	</premagic>
+	<midmagic>
+		<if ad_type="WhiteMagic">
+						<!---<addtochat color="4">WhiteMagic</addtochat>--->
+			<if ad_name="Flash|Holy*|Banish*">
+				<!---<addtochat color="4">***MAtt***$Gset***</addtochat>--->
+				<equip set="MAttack" />
+			</if>
+			<elseif ad_name="Cure*|Curaga*">
+				<!---<equip set="Healing" /><addtochat color="4">***Heal***$Gset***</addtochat>--->
+			</elseif>			
+		</if>
+		<if ad_type="BlueMagic">
+			<if ad_name="Head Butt|Power Attack">
+				<!---<addtochat color="4">***BlueMagic***$Gset***$Wset</addtochat>--->
+				<equip set="MAttack" />
+			</if>
+		</if>
+		<else>
+			<equip set="Fastcast" />
+			<!---<addtochat color="4">***FC1***$Gset***</addtochat>--->
+		</else>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Upheaval">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Upheaval" />---><gearlock delay="4" /><addtochat color="4">Upheaval</addtochat></if>
+		<elseif ad_name="Full Break">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Full Break" />---><gearlock delay="4" /><addtochat color="4">Full Break</addtochat></elseif>
+		<elseif ad_name="Fell Cleave">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Fell Cleave" />---><gearlock delay="4" /><addtochat color="4">Fell Cleave</addtochat></elseif>
+		<elseif ad_name="Impulse Drive">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Impulse Drive" />---><gearlock delay="4" /><addtochat color="4">Impulse Drive</addtochat></elseif>
+		<elseif ad_name="Penta Thrust">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Penta Thrust" />---><gearlock delay="4" /><addtochat color="4">Penta Thrust</addtochat></elseif>
+		<elseif ad_name="Sonic Thrust">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Sonic Thrust" />---><gearlock delay="4" /><addtochat color="4">Sonic Thrust</addtochat></elseif>
+		<elseif ad_name="Sanguine Blade">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Sanguine Blade" />---><gearlock delay="4" /><addtochat color="4">Sanguine Blade</addtochat></elseif>
+		<elseif ad_name="Requiescat">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Requiescat" />---><gearlock delay="4" /><addtochat color="4">Requiescat</addtochat></elseif>
+		<elseif ad_name="Savage Blade">
+			<equip>
+				<neck>Fotia Gorget</neck>				
+				<back>Fotia Belt</back>				
+			</equip>
+		<!---<equip set="Savage" />---><gearlock delay="4" /><addtochat color="4">Savage Blade</addtochat></elseif>
+		<else><equip set="Rmid" /><!---<addtochat color="4">Range Mid</addtochat>---><gearlock delay="4" /><addtochat color="4">Other Ranged</addtochat></else>
+	</weaponskill>
+</ashitacast>
